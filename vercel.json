@@ -1,5 +1,4 @@
 {
   "buildCommand": "cd BedRkBase/bedrkbase && npm install && npm run build",
-  "outputDirectory": "BedRkBase/bedrkbase/out",
-  "rootDirectory": "BedRkBase/bedrkbase"
+  "outputDirectory": "BedRkBase/bedrkbase/out"
 }
