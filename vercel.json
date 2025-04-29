@@ -1,4 +1,3 @@
 {
-  "buildCommand": "npm --prefix BedRkBase/bedrkbase install && npm --prefix BedRkBase/bedrkbase run build",
-  "outputDirectory": "BedRkBase/bedrkbase/out"
+  "buildCommand": "npm --prefix BedRkBase/bedrkbase install && npm --prefix BedRkBase/bedrkbase run build"
 }
