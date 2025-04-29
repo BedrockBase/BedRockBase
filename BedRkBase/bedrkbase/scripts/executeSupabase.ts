@@ -26,7 +26,7 @@ async function main() {
 
     console.log('Calling get_all_establishments_for_user function...');
     const userEstablishments = await executeFunction('get_all_establishments_for_user', {
-      p_user_id: userId
+      user_id: userId
     });
     console.log(`Retrieved ${userEstablishments?.length || 0} establishments for user`);
 
