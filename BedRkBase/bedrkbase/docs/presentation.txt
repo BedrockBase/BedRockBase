@@ -1,0 +1,21 @@
+# Sample Presentation
+
+## Slide 1: Introduction
+- BedRkBase Project Overview
+- Key Features
+- Technology Stack
+
+## Slide 2: Database Schema
+- Establishments Table
+- Users Table
+- Access Control
+
+## Slide 3: API Endpoints
+- Authentication
+- CRUD Operations
+- Query Parameters
+
+## Slide 4: Future Development
+- Planned Features
+- Timeline
+- Contribution Guidelines

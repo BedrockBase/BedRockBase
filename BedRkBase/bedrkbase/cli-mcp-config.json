@@ -1,0 +1,16 @@
+{
+  "allowedCommands": [
+    "bash",
+    "node",
+    "npm",
+    "npx",
+    "python",
+    "ls",
+    "dir"
+  ],
+  "allowedScripts": [
+    "backup.sh"
+  ],
+  "workingDirectory": ".",
+  "timeout": 30000
+}

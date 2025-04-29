@@ -1,0 +1,23 @@
+{
+  "name": "BedRkBase Dev Container",
+  "dockerComposeFile": [
+    "../docker-compose.yml"
+  ],
+  "service": "backend",
+  "workspaceFolder": "/app",
+  "shutdownAction": "stopCompose",
+  "extensions": [
+    "esbenp.prettier-vscode",
+    "Prisma.prisma",
+    "dbaeumer.vscode-eslint"
+  ],
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/sh"
+  },
+  "mounts": [
+    "source=${localWorkspaceFolder}/,target=/app,type=bind,consistency=cached",
+    "source=pgdata,target=/var/lib/postgresql/data,type=volume"
+  ],
+  "postCreateCommand": "yarn install && npx prisma generate",
+  "remoteUser": "node"
+}

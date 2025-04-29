@@ -1,0 +1,103 @@
+/**
+ * Global styles for BedRkBase application
+ */
+
+/* Import Tailwind CSS directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Variables for theming */
+:root {
+  --primary-color: #3b82f6;
+  --primary-hover: #2563eb;
+  --secondary-color: #6b7280;
+  --background-color: #1e293b;
+  --card-background: #0f172a;
+  --text-color: #f1f5f9;
+  --error-color: #ef4444;
+  --success-color: #10b981;
+  --warning-color: #f59e0b;
+  --info-color: #3b82f6;
+}
+
+/* Base styles */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  @apply bg-gradient-to-br from-slate-900 to-slate-800 text-slate-100 min-h-screen;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Tailwind component classes */
+@layer components {
+  .auth-container {
+    @apply min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-900 to-slate-800;
+  }
+  
+  .auth-card {
+    @apply w-full max-w-md space-y-8 p-8 bg-slate-900/50 backdrop-blur-sm rounded-xl shadow-2xl border border-slate-800/50;
+  }
+  
+  .form-label {
+    @apply block text-sm font-medium text-slate-300 mb-1;
+  }
+  
+  .form-input {
+    @apply block w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2.5 
+           text-slate-100 placeholder-slate-500
+           focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent
+           transition-all duration-200;
+  }
+  
+  .btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700 text-white font-medium py-2.5 px-4 rounded-lg
+           transform hover:scale-[1.02] active:scale-[0.98]
+           transition-all duration-200
+           focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-slate-900;
+  }
+}
+
+/* Utility classes that will work even if Tailwind fails to load */
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
